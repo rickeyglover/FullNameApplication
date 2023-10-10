@@ -10,9 +10,11 @@ public class FullNameApplication {
         System.out.println("Enter your Full Name");
         System.out.println("First Name: ");
         String fname = myScanner.nextLine();
+        fname = fname.trim();
 
         System.out.println("Middle Name: ");
         String mname = myScanner.nextLine();
+        mname = mname.trim();
         int space = mname.length();
         if (space > 0)
         { mname = mname + " ";}
@@ -22,9 +24,11 @@ public class FullNameApplication {
 
         System.out.println("Last Name: ");
         String lname = myScanner.nextLine();
+        lname = lname.trim();
 
         System.out.println("Suffix: ");
         String suffix = myScanner.nextLine();
+        suffix = suffix.trim();
         int length = suffix.length();
         if (length > 0)
         { lname = lname + ", "; }
